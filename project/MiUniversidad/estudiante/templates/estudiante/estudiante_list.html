@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Estudiante | Lista
+{% endblock title %}
+ 
+{% block body_title %}
+ Estudiante : Todos los estudiantes
+{% endblock body_title %}
+
+{% block content %}
+
+{% for estudiante in estudiantes %}
+<ul>
+    <li><p>Nombre:{{ estudiante.nombre}}</p></li>
+    <li><p>Apellido:{{ estudiante.apellido}}</p></li>
+    <li><p>Nacimiento:{{ estudiante.nacimiento}}</p></li>
+    {% if estudiante.pais_origen_fk %}
+    <li><p>Pais:{{ estudiante.pais_origen_fk}}</p></li>
+    {% else %}
+    <li><p>Pais: "No hay registro"</p></li>
+    {% endif %}
+    
+</ul>
+{% endfor %}
+{% endblock content %}
+
+ 

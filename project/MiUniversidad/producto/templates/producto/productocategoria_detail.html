@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Producto | Categorias de Productos
+{% endblock title %}
+ 
+{% block body_title %}
+Producto - Categorias de Productos: detalles de producto
+{% endblock body_title %}
+
+{% block content %}
+<div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Nombre:{{ object.nombre }}</h5>
+      <p class="card-text">Descripción{{ object.descripcion }}</p>
+      <a href="{% url 'producto:productocategoria_list' %}" class="btn btn-secondary">Atrás</a>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+    </div>
+  </div>
+  
+    
+{% endblock content %}
+
+ 

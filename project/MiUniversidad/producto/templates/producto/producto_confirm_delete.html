@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Producto |  Productos
+{% endblock title %}
+ 
+{% block body_title %}
+{% if form.instance.pk %}
+     Producto -  Producto: Descartar
+
+{% endblock body_title %}
+
+{% block content %}
+
+<p class="fs-5 fst-italic">¿ Estas seguro que quieres descartar los cambios de "{{ object.nombre }}"?</p>
+<form method="post">
+  {% csrf_token %}
+ 
+  <button type="submit">Confirmar</button>
+
+</form>
+<a href="{% url 'producto:index' %}">Regresar</a>
+{% endblock content %}
+
+
+ 

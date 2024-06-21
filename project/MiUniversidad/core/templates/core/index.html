@@ -1,0 +1,106 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}
+    U.N.A.F
+{% endblock title %}
+
+{% block body_title %}
+Menu
+{% endblock body_title %}
+
+{% block content %}
+
+
+ 
+<!-- Page Content-->
+<div class="container px-4 px-lg-5">
+
+     {% if user.is_authenticated %}
+        <p class="text-info "> Sea bienvenido {{user.username}}</p>
+     {% endif %}
+
+      {% if mensaje %}
+      <p class="text-info ">{{ mensaje }} Sea bienvenido</p>
+      {% endif %}
+
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" 
+            src="{% static 'core/imagen/logo.unaf-.webp' %}" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">Universidad Nacional De Finanzas</h1>
+            <p>La Universidad Nacional de Finanzas (UNAF) es una institución pública de educación superior ubicada en la ciudad de Buenos Aires, Argentina. Fue fundada en 1985 con el objetivo de formar profesionales altamente capacitados en el área de las finanzas y la economía.</p>
+            <a class="btn btn-primary" href="https://wa.me/1158403375" target="_blank">Comunicate con nosotros</a>
+            <li><a href="about.html">Acerca de</a></li>
+        </div>
+    </div>
+    <!-- Call to Action-->
+    <div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card bg-dark text-white">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">La Universidad de Finanzas</h2>
+                    <p class="card-text">La Universidad de Finanzas es una prestigiosa institución académica que se enfoca en la formación de expertos en el campo de las finanzas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Content Row-->
+    <div class="container-fluid my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="Tarjeta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 1</h5>
+                        <p class="card-text">Promociones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/id/2/300/200" class="card-img-top" alt="Tarjeta 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 2</h5>
+                        <p class="card-text">Promociones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/id/3/300/200" class="card-img-top" alt="Tarjeta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 3</h5>
+                        <p class="card-text">Promociones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/id/4/300/200" class="card-img-top" alt="Tarjeta 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 4</h5>
+                        <p class="card-text">Promociones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://picsum.photos/id/5/300/200" class="card-img-top" alt="Tarjeta 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 5</h5>
+                        <p class="card-text">Promociones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white"> </p></div>
+</footer>
+{% endblock content %}
+

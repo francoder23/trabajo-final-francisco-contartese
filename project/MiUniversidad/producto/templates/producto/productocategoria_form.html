@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Producto | Categoria de Productos
+{% endblock title %}
+ 
+{% block body_title %}
+{% if form.instance.pk %}
+     Producto - Categorias de Producto: Edición
+{% else %}
+    Producto - Categorias de Productos: Creación
+{% endif %}
+Producto : Todos los productos > Creación
+{% endblock body_title %}
+
+{% block content %}
+
+<form method="post">
+  {% csrf_token %}
+  <table>
+  {{ form.as_table }}
+  </table>
+  {% if form.errors %}
+<script>
+  var errors = '';
+  Swal.fire({
+    title: 'Error!',
+    text: errors,
+    icon: 'error',
+  });
+</script>
+{% endif %}
+  <button type="submit">Guardar</button>
+
+</form>
+{% endblock content %}
+
+
+ 

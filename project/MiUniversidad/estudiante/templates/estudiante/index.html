@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Estudiante
+{% endblock title %}
+
+{% block body_title %}
+ App Estudiante
+{% endblock body_title %}
+
+
+{% block content %}
+     <div>
+        <a href="{% url 'estudiante:estudiante_list' %}">Todos los estudiantes</a>
+    </div>
+{% endblock content %}
