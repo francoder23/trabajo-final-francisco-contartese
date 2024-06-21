@@ -13,15 +13,10 @@ Los usuarios pueden iniciar sesión en "LOGIN".
 Los usuarios pueden cerrar sesión en la aplicación en cualquier momento en "LOGOUT".
 Explicar
 Explicar
-carreras universitarias: Los usuarios pueden agregar sus carreras universitarias haciendo click en "", una vez agregado lo pueden "editar","eliminar" y "detallar". 
+carreras universitarias: Los usuarios pueden agregar sus carreras universitarias haciendo click en "agregar", una vez agregado lo pueden "editar","eliminar" y "detallar". 
 
-Búsqueda de carreras: Los usuarios pueden buscar carreras guardados en base a su "", "", "empresa" y "" haciendo click en sus respectivos botones.
+Búsqueda de carreras: Los usuarios pueden buscar carreras guardadas en la base de datos 
 
-
-
-Mensajes: Los usuarios pueden ver una lista de todos las conversaciones haciendo click en "Mensajes" arriba o bajando en la parte del chat, cada usuario tiene su propia mensajería privada con los mensajes que mandó a cada usuario. Los usuarios pueden crear una nueva conversación con un mensaje hacia un usuario haciendo click en "CREAR NUEVA CONVERSACIÓN". Los usuarios pueden dejar un comentario respondiendo el mensaje que otro usuario les mandó haciendo click en "VER CONVERSACIÓN" y luego "ENVIAR MENSAJE", luego se podrá ver la conversación actualizada en "Mensajes".
-
-Perfil: Los usuarios pueden editar su perfil haciendo click en "Perfil" y luego "Editar perfil". Los usuarios pueden agregar un avatar para su perfil haciendo click en "Perfil" y luego "Agregar Avatar". Los usuarios pueden ver los avatares que tiene haciendo click en "Perfil" y luego "Ver los avatares".
 
 Administración: Los usuarios con permisos de administrador pueden ver, editar, eliminar y agregar todo.
 
@@ -41,6 +36,5 @@ Configure la base de datos utilizando el comando python manage.py migrate.
 Ejecute la aplicación utilizando el comando python manage.py runserver.
 Explicar
 Explicar
-Conclusion
 
-¡Eso es todo! Espero que esta descripción te haya gustado, saludos, Julián!
+
